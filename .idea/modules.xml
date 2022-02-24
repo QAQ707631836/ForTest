@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ForJavaTest.iml" filepath="$PROJECT_DIR$/ForJavaTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/d0211217/d0211217.iml" filepath="$PROJECT_DIR$/d0211217/d0211217.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafkaInstance/kafkaInstance.iml" filepath="$PROJECT_DIR$/kafkaInstance/kafkaInstance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/normal/normal.iml" filepath="$PROJECT_DIR$/normal/normal.iml" />
+    </modules>
+  </component>
+</project>

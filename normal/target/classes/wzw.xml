@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <properties>
+        <project>wzw</project>
+        <application>local-sql-test</application>
+    </properties>
+
+    <frameworks>
+        <Flink id="flink">
+            <property name="application">${properties.application}</property>
+            <property name="parallelism">1</property>
+        </Flink>
+    </frameworks>
+    <components>
+        <Stream id="src_test_log" to="table" type="etl" order="0">
+            <property name="keyword">LoginRole,LogoutRole</property>
+            <property name="file">D:\Workspace\flinks-master\ux-app\src\main\resources\wzw\src_test_log.log</property>
+            <property name="type.timestamp">dt->yyyyMMdd,t_when->yyyyMMdd</property>
+        </Stream>
+
+        <Sql id="test-sql-1" to="print">
+            select count(1) from LoginRole
+        </Sql>
+    </components>
+</configuration>
